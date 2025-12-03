@@ -40,7 +40,7 @@ public static class PRDWorkflowConfiguration
                 productStrategyAgent, 
                 technicalArchitectAgent 
             };
-            return AgentWorkflowBuilder.BuildConcurrent(workflowName: key, agents: agents);
+            return AgentWorkflowBuilder.BuildSequential(workflowName: key, agents: agents);
         }).AddAsAIAgent();
     }
 }
